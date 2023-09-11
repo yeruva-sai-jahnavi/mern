@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: blue;
+    }
+
+    table,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    #form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 500px;
+
+    }
+
+    select,
+    input {
+        width: 97%;
+    }
+
+    .gender-radio,
+    .lang {
+        width: 20px;
+    }
+
+    button {
+        margin: 10px 0;
+    }
+
+    .agree {
+        width: 4%
+    }
+</style>
+
+<body>
+    <h1>Registration Form</h1>
+    <div id="form-container">
+        <form method="post">
+            <table>
+                <tr>
+                    <th>
+                        <label>First Name:</label>
+                    </th>
+                    <td>
+                        <input type="text" id="First-name"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Last name:</label>
+                    </th>
+                    <td>
+                        <input type="text" id="Last-name"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Email:</label>
+                    </th>
+                    <td>
+                        <input type="text" id="email"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Password:</label>
+                    </th>
+                    <td>
+                        <input type="password" id="password"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Re-enter Password:</label>
+                    </th>
+                    <td>
+                        <input type="password" id="re-password"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Gender</label>
+                    </th>
+                    <td>
+                        <input class="gender-radio" type="radio" id="male" value="male">
+                        <label for="male">Male</label><br>
+                        <input class="gender-radio" type="radio" id="female" value="female">
+                        <label for="female">Female</label><br>
+                        <input class="gender-radio" type="radio" id="other" value="other">
+                        <label for="other">Other</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Age</label>
+                    </th>
+                    <td>
+                        <input type="number" id="age"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Phone Number</label>
+                    </th>
+                    <td>
+                        <input type="number" id="phone"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Address:</label>
+                    </th>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>State</label>
+                    </th>
+                    <td>
+                        <input type="text" id="state"><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label>Country:</label>
+                    </th>
+                    <td>
+                        <select>
+                            <option>Select your country</option>
+                            <option value="IN">India</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="TU">Turkey</option>
+                            <option value="GE">Germany</option>
+                        </select><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Languages Known</th>
+                    <td>
+                        <input class="lang" type="checkbox" id="eng">
+                        <label for="eng">English</label>
+                        <input class="lang" type="checkbox" id="telugu">
+                        <label for="telugu">Telugu</label>
+                        <input class="lang" type="checkbox" id="kannada">
+                        <label for="kannada">Kannada</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="agree" id="agree" class="agree">
+                        I hereby declare that all the given details are true
+                    </td>
+                </tr>
+
+            </table>
+
+            <button type="submit">Save</button>
+        </form>
+    </div>
+</body>
+
+</html>

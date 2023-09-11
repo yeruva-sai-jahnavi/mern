@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 2 - Nav Bar</title>
+    <style>
+        #vertical {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 33%;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        #vertical li a {
+            text-decoration: none;
+            display: block;
+            background-color: rgb(143, 196, 209);
+            padding: 10px 20px;
+        }
+
+        #vertical li a:hover {
+            background-color: rgb(252, 164, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        #horizontal {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #horizontal li {
+            float: left;
+            border-right: 1px solid rgb(0, 0, 255);
+        }
+
+        #horizontal li a {
+            display: block;
+            padding: 10px;
+            background-color: rgb(211, 211, 211);
+            text-decoration: none;
+        }
+
+        #horizontal li a:hover {
+            background-color: rgb(123, 122, 122);
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="vertical">
+        <li><a href="#" style="background-color:rgb(252, 164, 0)">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+
+    <br>
+
+    <ul id="horizontal">
+        <li><a href="#" style="background-color: rgb(123, 122, 122);">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+
+
+</body>
+
+</html>

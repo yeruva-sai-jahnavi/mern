@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task 1</title>
+    <style>
+        #first {
+            width: 100%;
+        }
+
+        #first,
+        #first th,
+        #first td {
+            border: 1px solid black;
+            background-color: #96d4d4;
+            border-radius: 10px;
+        }
+
+        #next {
+            width: 70%;
+            height: 400px;
+            margin: 0 auto;
+            max-width: 600px;
+
+        }
+
+        .item {
+            border: 5px solid rgb(158, 202, 14);
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Task 1</h1>
+
+    <table id="first">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <br /><br />
+
+    <table id="next" cellspacing="30">
+        <tr>
+            <td class="item" style="border-radius:7px"></td>
+            <td class="item" style="border-radius:15px"></td>
+            <td class="item" style="border-radius:25px"></td>
+        </tr>
+        <tr>
+            <td class="item" style="border-radius:15px"></td>
+            <td class="item" style="border-radius:7px"></td>
+            <td class="item" style="border-radius:25px"></td>
+        </tr>
+        <tr>
+            <td class="item" style="border-radius:50%"></td>
+            <td class="item" style="border-radius:10px"></td>
+            <td class="item" style="border-radius: 7px;border-top-right-radius: 25px;border-bottom-left-radius: 25px;">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

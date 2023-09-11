@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Lists</title>
+</head>
+
+<style>
+    .parent-list {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 40px;
+
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        margin: auto;
+    }
+</style>
+
+<body>
+    <ul class="parent-list">
+        <li> coffee </li>
+        <li> tea </li>
+        <ul>
+            <li> green tea</li>
+            <li> black tea</li>
+        </ul>
+        <li> milk </li>
+    </ul>
+</body>
+
+</html>
