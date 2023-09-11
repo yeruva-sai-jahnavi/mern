@@ -1,96 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Task 4</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin-top: 0;
+        #mySidenav a {
+            position: absolute;
+            left: -80px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
         }
 
-        .main {
-            border-style: solid;
-            border-color: black;
-            border-width: 1px;
-            height: 400px;
-            width: 500px;
-            display: flex;
+        #mySidenav a:hover {
+            left: 0;
         }
 
-        .sidenav {
-            display: flex;
-            flex-direction: column;
-            padding-top: 20px;
-            align-items: center;
-            /* Center the content vertically */
+        #about {
+            top: 80px;
+            background-color: #2196F3;
         }
 
-        .d1,
-        .d2,
-        .d3,
-        .d4 {
-            width: 35px;
-            height: 35px;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            background-color: transparent;
-            margin-bottom: 10px;
-            transition: transform 0.1s;
-            /* Add a transition for smooth change */
+        #home {
+            top: 20px;
+            background-color: #04AA6D;
         }
 
-        .d1:hover,
-        .d2:hover,
-        .d3:hover,
-        .d4:hover {
-            transform: scale(1.1);
-            /* Scale the individual div on hover */
+        #projects {
+            top: 140px;
+            background-color: #f44336;
         }
 
-        .d1 {
-            background-color: rgb(18, 154, 74);
-        }
-
-        .d2 {
-            background-color: rgb(32, 146, 239);
-        }
-
-        .d3 {
-            background-color: rgb(235, 35, 35);
-        }
-
-        .d4 {
-            background-color: rgb(34, 30, 30);
-        }
-
-        .p-content {
-            padding-left: 30px;
+        #contact {
+            top: 200px;
+            background-color: #555
         }
     </style>
 </head>
 
 <body>
-    <h1>CSS Task 4</h1>
-    <div class="main">
-        <div class="sidenav">
-            <div class="d1"></div>
-            <div class="d2"></div>
-            <div class="d3"></div>
-            <div class="d4"></div>
-        </div>
 
-        <div class="p-content">
-            <h3><b>Hoverable Sidenav Buttons</b></h3>
-            <p>Hover over the buttons in the left side navigation to open them.</p>
-        </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="home">Home</a>
+        <a href="#" id="about">About</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
     </div>
+
+    <div style="margin-left:80px;">
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+
 </body>
 
 </html>
